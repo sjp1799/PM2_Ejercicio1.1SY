@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PME2ejercicio1_1.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#72C283" 
+               Padding="20" 
+               CornerRadius="0">
+            <Label Text="Calculadora" FontSize="30"  TextColor="White" HorizontalTextAlignment="Center"/>
+
+        </Frame>
+
+
+        <Label Text="Numero 1:" Padding="20"/>
+        <Entry x:Name="num1" Keyboard="Numeric"  />
+
+        <Label Text="Numero 2:" Padding="20"/>
+        <Entry x:Name="num2" Keyboard="Numeric"/>
+
+        <Button Text="Sumar" 
+                x:Name="btnSuma"
+                WidthRequest="180"
+                Clicked="btnSuma_Clicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="#72C283" 
+                TextColor="White"
+                Margin="10"/>
+
+        <Button Text="Restar" 
+                x:Name="btnResta"
+                WidthRequest="180"
+                Clicked="btnResta_Clicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="#72C283" 
+                TextColor="White"
+                Padding="10"
+                Margin="10"/>
+
+        <Button Text="Multiplicar" 
+                x:Name="btnMultiplicacion"
+                Clicked="btnMultiplicacion_Clicked"
+                WidthRequest="180"
+                HorizontalOptions="Center" 
+                BackgroundColor="#72C283" 
+                TextColor="White"
+                Margin="10"/>
+
+        <Button Text="Dividir" 
+                x:Name="btnDivision"
+                WidthRequest="180"
+                Clicked="btnDivision_Clicked"
+                HorizontalOptions="Center" 
+                BackgroundColor="#72C283" 
+                TextColor="White"
+                Margin="10"/>
+    </StackLayout>
+
+</ContentPage>
